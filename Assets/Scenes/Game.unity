@@ -5404,6 +5404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f49ccfc31e524a72ba63a0e638bcb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueTree: {fileID: 1394356870}
 --- !u!4 &417613455
 Transform:
   m_ObjectHideFlags: 0
@@ -11171,6 +11172,72 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1394356869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394356871}
+  - component: {fileID: 1394356870}
+  m_Layer: 0
+  m_Name: Tree 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1394356870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394356869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f331b2d0d5514fe2a30daf230805dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueFile: {fileID: 4900000, guid: 2888ab1f5439548caae335bc8bc5dfee, type: 3}
+  serializedNodes:
+  - text: rando
+    childCount: 6
+    indexOfFirstChild: 1
+  - text: hello
+    childCount: 0
+    indexOfFirstChild: 2
+  - text: hi
+    childCount: 0
+    indexOfFirstChild: 3
+  - text: how are you
+    childCount: 0
+    indexOfFirstChild: 4
+  - text: good
+    childCount: 0
+    indexOfFirstChild: 5
+  - text: you
+    childCount: 0
+    indexOfFirstChild: 6
+  - text: bye
+    childCount: 0
+    indexOfFirstChild: 7
+--- !u!4 &1394356871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394356869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 314.5, y: 199, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1494555194
 GameObject:
   m_ObjectHideFlags: 0

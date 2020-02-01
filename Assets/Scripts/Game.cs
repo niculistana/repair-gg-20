@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Doozy.Engine.UI;
+using GG;
 
 public class Game : MonoBehaviour
 {
-	private bool isGamePaused;
+	[SerializeField]
+	public DialogueTree dialogueTree;
+
+ private bool isGamePaused;
 
 	void Start()
 	{
