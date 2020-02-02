@@ -6,6 +6,12 @@ using System.IO;
 
 namespace GG
 {
+	public class DialogueNode
+	{
+		public string text;
+		public List<DialogueNode> children = new List<DialogueNode>();
+	}
+
 	public class DialogueTree : MonoBehaviour, ISerializationCallbackReceiver
 	{
 		// Node class that we will use for serialization.
@@ -30,6 +36,7 @@ namespace GG
 			// The correct data must now be written into that field "just in time".
 			if (serializedNodes == null) serializedNodes = new List<SerializableNode>();
 			if (root == null) root = new DialogueNode();
+			root.text = dialogueFile.text.Split('\n')[0];
 			// seed children for dialogue generation
 			SeedChildren(out root.children);
 			serializedNodes.Clear();
@@ -103,9 +110,9 @@ namespace GG
 		{
 			string[] sentences = dialogueFile.text.Split('\n');
 			children = new List<DialogueNode>();
-			foreach (string sentence in sentences) {
+			for (int i = 1; i < sentences.Length; i++) {
 				DialogueNode child = new DialogueNode();
-				child.text = sentence;
+				child.text = sentences[i];
 				children.Add(child);
 			}
 		}

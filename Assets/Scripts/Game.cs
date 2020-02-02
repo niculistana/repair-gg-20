@@ -6,10 +6,7 @@ using GG;
 
 public class Game : MonoBehaviour
 {
-	[SerializeField]
-	public DialogueTree dialogueTree;
-
- private bool isGamePaused;
+	private bool isGamePaused;
 
 	void Start()
 	{
